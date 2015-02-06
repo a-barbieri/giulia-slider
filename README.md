@@ -1,6 +1,8 @@
 # giulia-slider
 Horizontal infinite slider
 
+Preview @ http://alessandrobarbieri.net/giulia-slider/
+
 ## Usage
 Simply download the `slideshow.js` file and add the following line to your code.
 ```
@@ -27,5 +29,3 @@ See the following code
     </li>
   </ul>
 ```
-
-
