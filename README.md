@@ -5,31 +5,43 @@ Preview @ http://alessandrobarbieri.net/giulia-slider/
 Maybe too gay friendly images... but hey, I got annoyed by furry cats and funky dogs.
 
 ## Usage
-Simply download the `slideshow.js` file and add the following line to your code.
+Download the `slideshow.js` file and add the following line at the bottom of your HTML.
 ```
-   <script src="assets/lib/slideshow.js"></script>
+<script src="assets/lib/slideshow.js"></script>
 ```
 To be able to use it you need at least 5 images on a list (this will be fixed later).
 See the following code
 ```
-  <ul class="slideshow">
-    <li>
-      <img src="your-image.jpg">
-    </li>
-    <li>
-      <img src="your-image.jpg">
-    </li>
-    <li>
-      <img src="your-image.jpg">
-    </li>
-    <li>
-      <img src="your-image.jpg">
-    </li>
-    <li>
-      <img src="your-image.jpg">
-    </li>
-  </ul>
+<ul class="slideshow">
+  <li>
+    <img src="your-image.jpg">
+  </li>
+  <li>
+    <img src="your-image.jpg">
+  </li>
+  <li>
+    <img src="your-image.jpg">
+  </li>
+  <li>
+    <img src="your-image.jpg">
+  </li>
+  <li>
+    <img src="your-image.jpg">
+  </li>
+</ul>
 ```
+To initiate it add this script
+````
+$('.slideshow').slideshow();
+````
+To better control images use imagesLoaded by DeSandro https://github.com/desandro/imagesloaded
+````
+  imagesLoaded( '.slideshow', function()
+    {
+      $('.slideshow').slideshow();
+    }
+  );
+````
 And this is the minimum css (probably it can be less than that)
 ```
 .showcase {
