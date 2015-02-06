@@ -1,0 +1,166 @@
+// - - - - - - - - - - - - - - - - - - 
+// VARIABLES
+// - - - - - - - - - - - - - - - - - - 
+
+// colors
+@text-color:          #000;
+@link-color:          @text-color;
+@placeholder-color:   #dfdfd5;
+@bg-color:            grey; //#e8ab72;
+
+// useful to debug
+.bordered {
+  border: 2px solid red;
+}
+
+
+// - - - - - - - - - - - - - - - - - - 
+// GRID
+// - - - - - - - - - - - - - - - - - - 
+
+@columnNum:       12;
+@columnWidth:     50px;
+@gutterWidth:     40px;
+@containerWidth:  ( @columnWidth * @columnNum ) + ( @gutterWidth * ( @columnNum - 1 ) );
+
+.columnWidth( @numOfColumn ) {
+  width: @numOfColumn * @columnWidth + (@numOfColumn - 1) * @gutterWidth;
+}
+.columnMarginLeft( @numOfColumn ) {
+  margin-left: @numOfColumn * ( @columnWidth + @gutterWidth );
+}
+
+section {
+  width: 100%;
+}
+.section-container {
+  width: @containerWidth;
+  margin: 0 auto;
+}
+.cf {
+  display: block;
+  zoom: 1;
+
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+
+// - - - - - - - - - - - - - - - - - - 
+// LAYOUT
+// - - - - - - - - - - - - - - - - - - 
+
+body {
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+  padding: 0;
+  background-color: @bg-color;
+}
+
+
+// - - - - - - - - - - - - - - - - - - 
+// TYPO
+// - - - - - - - - - - - - - - - - - - 
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: @link-color;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 2px solid @link-color; 
+}
+p {
+  font-size: 18px;
+  line-height: 28px;
+}
+small {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 20px;
+}
+em {
+  font-style: italic;
+  display: inline-block;
+}
+strong {
+  font-weight: bold;
+  display: inline-block;
+}
+
+
+
+// - - - - - - - - - - - - - - - - - - 
+// HEADER
+// - - - - - - - - - - - - - - - - - - 
+
+
+
+// - - - - - - - - - - - - - - - - - - 
+// CONTENT
+// - - - - - - - - - - - - - - - - - - 
+
+
+
+// - - - - - - - - - - - - - - - - - - 
+// SLIDESHOW
+// - - - - - - - - - - - - - - - - - - 
+
+.showcase {
+  width: 100%;
+  height: 600px;
+  margin-top: 48px;
+  overflow: hidden;
+}
+.slideshow {
+  width: 100%;
+  position: relative;
+}
+  .slideshow > li {
+    margin: 0 auto;
+    .columnWidth(10);
+    //margin-left: 20px;
+  }
+    .slideshow > li > img {
+      width: 100%;
+      height: auto;
+    }
+// This class is useful to avoid problem with non-javascript situations
+.slideshow-ready {
+}
+  .slideshow-ready > li {
+    float: left;
+  }
+  .slideshow-ready .prev,
+  .slideshow-ready .next {
+    cursor: pointer;
+  }
+
+
+
+// - - - - - - - - - - - - - - - - - - 
+// COMMON CLASSES
+// - - - - - - - - - - - - - - - - - - 
+
+
+// - - - - - - - - - - - - - - - - - - 
+// QUERIES
+// - - - - - - - - - - - - - - - - - - 
+
+@media  only screen and (min-width: 960px) {
+  
+}
+@media  only screen and (min-width: 1280px) {
+  
+}
