@@ -1,5 +1,5 @@
 .bordered {
-  border: 2px solid red;
+  border: 2px solid #dcd780;
 }
 section {
   width: 100%;
@@ -26,7 +26,7 @@ body {
   line-height: 1.25em;
   letter-spacing: 1px;
   padding: 0;
-  background-color: #808080;
+  background-color: #dcd780;
 }
 a,
 a:link,
