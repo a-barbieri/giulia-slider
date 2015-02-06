@@ -41,7 +41,6 @@
     <!-- SCRIPT -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="assets/lib/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/lib/holder.js"></script>
     <script src="assets/lib/slideshow.js"></script>
     <script src="assets/js/script.js" ></script>
   </body>
