@@ -2,7 +2,7 @@
 Horizontal infinite slider
 
 Preview @ http://alessandrobarbieri.net/giulia-slider/
-Maybe too gay friendly images... but hey, I got annoyed by furry cats and funky dogs.
+Maybe too gay friendly images... but hey, I got bored by furry cats and funky dogs.
 
 ## Usage
 Download the `slideshow.js` file and add the following line at the bottom of your HTML.
